@@ -1,0 +1,801 @@
+@font-face {
+    font-family: "Inconsolata";
+    src: url(../fonts/Inconsolata.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato.ttf) format("truetype");
+}
+@font-face {
+    font-family: "NunitoSans";
+    src: url(../fonts/NunitoSans.ttf) format("truetype");
+}
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+.clearfix:after,
+.content section:after {
+    clear: both;
+}
+.modal,
+.tabs {
+    overflow: hidden;
+}
+@font-face {
+    font-family: icomoon;
+    src: url(../fonts/icomoon.eot?9tnj2u);
+    src: url(../fonts/icomoon.eot?9tnj2u#iefix) format("embedded-opentype"), url(../fonts/icomoon.ttf?9tnj2u) format("truetype"), url(../fonts/icomoon.woff?9tnj2u) format("woff"), url(../fonts/icomoon.svg?9tnj2u#icomoon) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+.dark-primary-color {
+    background: #072134;
+}
+.default-primary-color {
+    background: #27aae1;
+}
+.light-primary-color {
+    background: #d1c4e9;
+}
+.text-primary-color {
+    color: #fff;
+}
+.accent-color {
+    background: #7c4dff;
+}
+.primary-text-color {
+    color: #212121;
+}
+.secondary-text-color {
+    color: #727272;
+}
+.divider-color {
+    border-color: #b6b6b6;
+}
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body,
+html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+.container > header > h4,
+.container > header > span {
+    text-align: center;
+    padding: 0 0 1em;
+}
+.clearfix:after,
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+body {
+    font-family: NunitoSans, Lato, Calibri, Arial, sans-serif;
+    color: #27aae1;
+}
+a {
+    color: #ccc;
+    outline: 0;
+}
+a:focus,
+a:hover {
+    color: #23527c;
+}
+::selection {
+    color: #fff;
+    background-color: #27aae1;
+}
+.green {
+    background: #c6efce;
+    color: #006100;
+}
+.yellow {
+    background: #ffeb9c;
+    color: #9c5700;
+}
+.red {
+    background: #f9a8a8;
+    color: #b40202;
+}
+.container > header {
+    width: 90%;
+    max-width: 69em;
+    margin: 0 auto;
+}
+.container > header h1 {
+    font-size: 2.125em;
+    line-height: 1.3;
+    margin: 0 0 0.6em;
+    float: left;
+    font-weight: 400;
+}
+.container > header > span {
+    display: block;
+    position: relative;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    clear: both;
+}
+.container > header > span span:after {
+    width: 30px;
+    height: 30px;
+    left: -12px;
+    top: -8px;
+    font-size: 75%;
+    position: relative;
+}
+.container > header > span span:hover:before {
+    content: attr(data-content);
+    text-transform: none;
+    text-indent: 0;
+    letter-spacing: 0;
+    font-weight: 300;
+    font-size: 110%;
+    padding: 0.8em 1em;
+    line-height: 1.2;
+    text-align: left;
+    left: auto;
+    margin-left: 4px;
+    position: absolute;
+    color: #fff;
+    background: #47a3da;
+}
+.container > header nav {
+    text-align: center;
+    padding: 0 1.275em 1.275em;
+}
+.container > header nav a {
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 2.5em;
+    height: 2.5em;
+    background: #072134;
+    border-radius: 50%;
+    margin: 0 0.1em;
+    border: 2px solid #072134;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.formucard .information,
+.formucard span:after,
+.tabs nav,
+label {
+    text-align: center;
+}
+.container > header nav a:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.container > header nav .icon-contact:after,
+.container > header nav .icon-facebook:after,
+.container > header nav .icon-github:after,
+.container > header nav .icon-instagram:after,
+.container > header nav .icon-pinterest:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 2;
+    text-indent: 0;
+}
+.container > header nav a:hover:after {
+    color: #fff;
+}
+.content section {
+    font-size: 1em;
+    padding: 3em 1em;
+    display: none;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.content section:after,
+.content section:before {
+    content: "";
+    display: table;
+}
+.no-js .content section {
+    display: block;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #27aae1;
+}
+.content section.content-current {
+    display: block;
+}
+.tabs {
+    position: relative;
+    width: 100%;
+    margin: 1em 0 2em;
+    font-weight: 300;
+}
+.icon-contact:after,
+.icon-facebook:after,
+.icon-github:after,
+.icon-instagram:after,
+.icon-pinterest:after,
+.tabs nav a:before {
+    font-family: icomoon;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+.tabs nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+.tabs nav ul li {
+    border: 1px solid #becbd2;
+    border-bottom: none;
+    margin: 0 0.25em;
+    display: block;
+    float: left;
+    position: relative;
+}
+.tabs nav li.tab-current {
+    border: 1px solid #27aae1;
+    box-shadow: inset 0 2px #27aae1;
+    border-bottom: none;
+    z-index: 100;
+}
+.tabs nav li.tab-current:after,
+.tabs nav li.tab-current:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    right: 100%;
+    bottom: 0;
+    width: 1000px;
+    background: #27aae1;
+}
+.tabs nav li.tab-current:after {
+    right: auto;
+    left: 100%;
+    width: 4000px;
+}
+.modal,
+.modal-content,
+.modal-header {
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.tabs nav a {
+    color: #becbd2;
+    display: block;
+    font-size: 1.1em;
+    line-height: 2.5;
+    padding: 0 1.25em;
+    white-space: nowrap;
+}
+.tabs nav a:hover {
+    color: #768e9d;
+}
+.tabs nav li.tab-current a {
+    color: #27aae1;
+}
+.tabs nav a:before {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin: -0.25em 0.4em 0 0;
+}
+.icon-financial:before {
+    content: "\f155";
+}
+.icon-business:before {
+    content: "\f201";
+}
+.icon-realty:before {
+    content: "\f015";
+}
+.icon-accounting:before {
+    content: "\f02d";
+}
+.icon-logistics:before {
+    content: "\f0b1";
+}
+.icon-puzzles:before {
+    content: "\f0b1";
+}
+.icon-github:after {
+    content: "\f113";
+}
+.icon-facebook:after {
+    content: "\f09a";
+}
+.icon-instagram:after {
+    content: "\f16d";
+}
+.icon-pinterest:after {
+    content: "\f0d2";
+}
+.icon-contact:after {
+    content: "\f0e0";
+}
+.icon-musemetrics:after {
+    content: "\f18c";
+}
+.icon-contact:after,
+.icon-facebook:after,
+.icon-github:after,
+.icon-instagram:after,
+.icon-pinterest:after {
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+}
+.icon-calculator,
+.icon-marker {
+    float: right;
+    margin: 0.75em;
+}
+.icon-marker:after {
+    content: "\e8b4";
+}
+.icon-calculator:after {
+    content: "\e905";
+}
+.icon-details:active:after,
+.icon-details:after {
+    content: "\e3c8";
+    transition: all 0.3s linear;
+}
+.icon-details:active:after {
+    transform: rotate(360deg);
+}
+.formucard span {
+    cursor: pointer;
+}
+.formucard .information {
+    margin-top: 25px;
+}
+.formucard h3:after,
+.formucard span:after {
+    vertical-align: middle;
+    text-transform: none;
+    font-weight: 400;
+    font-variant: normal;
+    font-family: icomoon;
+    line-height: 1;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    margin: -0.25em 0.4em 0;
+    display: inline-block;
+}
+.formucard {
+    transition: all 0.3s ease;
+    border: none;
+    display: inline-block;
+    margin: 0.5em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+}
+.empty .empty-item,
+.empty-item {
+    transition-property: opacity;
+    transition-timing-function: ease;
+}
+.formucard-head img,
+label {
+    display: block;
+    max-width: 100%;
+}
+.formucard-head {
+    width: 100%;
+    height: 100%;
+    padding: 7% 2%;
+    background: #27aae1;
+    border-radius: 5px 5px 0 0;
+}
+.formucard-head img {
+    margin: 0 auto;
+}
+.formucard-body {
+    padding: 10px 10px 25px;
+}
+.formucard-body h3 {
+    margin: 0.75em 0.5em 0.25em;
+    text-align: left;
+}
+.formucard-body h5 {
+    margin: 0.25em 1em 0.75em;
+    text-align: left;
+    color: #727272;
+}
+.formucard-body p {
+    padding: 0 0 1em;
+    margin: 0 0.75em;
+    line-height: 1.3;
+    color: #212121;
+}
+.formucard-body ol {
+    color: #212121;
+}
+.row {
+    -moz-column-width: 25em;
+    -webkit-column-width: 25em;
+    -moz-column-gap: 0.5em;
+    -webkit-column-gap: 0.5em;
+}
+label {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.hidden,
+.mobile-tagline {
+    display: none;
+}
+.modal-body,
+.modal-title {
+    font-weight: 300;
+    text-align: center;
+}
+input {
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+}
+.modal-info {
+    text-align: center;
+}
+.modal {
+    position: fixed;
+    bottom: 0;
+}
+.modal-dialog {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.modal-content {
+    position: absolute;
+    bottom: 0;
+    border: 2px solid #072134;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+}
+.modal-header {
+    position: absolute;
+    height: inherit;
+    padding: 10px;
+    background: #072134;
+    border: 0;
+    text-align: center;
+}
+.modal-title {
+    font-size: 2em;
+    color: #fff;
+    line-height: 30px;
+}
+.modal-body {
+    position: absolute;
+    top: 80px;
+    bottom: 25px;
+    width: 100%;
+    color: #727272;
+    overflow: auto;
+}
+.builder-helper {
+    font-size: large;
+}
+.popover-content {
+    color: #212121;
+    font-family: Lato;
+}
+.filter {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.close,
+.close:active,
+.close:focus,
+.close:hover,
+button.close button.close:hover,
+button.close:active,
+button.close:focus {
+    color: #fff;
+    outline: 0;
+}
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+span.icon-next,
+span.icon-prev {
+    color: #072134;
+    font-size: 2.75em;
+}
+.carousel-control {
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+}
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+    position: relative;
+}
+.carousel-indicators {
+    position: relative;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.carousel-indicators .active {
+    background: #072134;
+}
+.carousel-indicators li {
+    border: 1px solid #072134;
+}
+.item h2 {
+    text-align: center;
+}
+.item p {
+    font-size: 1.25em;
+    text-align: center;
+    margin: 0 5em;
+}
+.item ul li {
+    list-style-type: none;
+    text-align: center;
+}
+.empty-item {
+    transition-duration: 0;
+    transition-delay: 0;
+}
+.hiding {
+    margin-left: -100%;
+    opacity: 0.5;
+}
+.empty-item {
+    background: #fff;
+    color: #ddd;
+    margin: 0.2em 0;
+    padding: 0.5em 0.8em;
+    font-style: italic;
+    border: none;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.empty .empty-item {
+    transition-duration: 0.2s;
+    transition-delay: 0.3s;
+    opacity: 1;
+    visibility: visible;
+}
+p.btz {
+    transition: all 0.3s;
+    text-align: center;
+    animation: bounce 0.7s infinite alternate;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+p.info {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#gkb {
+    width: 50px;
+}
+#gkb_link {
+    color: #27aae1;
+    text-decoration: underline;
+}
+button#tutorial-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #27aae1;
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: none;
+    position: relative;
+}
+button#tutorial-title:hover:before {
+    left: -10%;
+}
+button#tutorial-title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.3);
+    width: 60%;
+    height: 100%;
+    -webkit-transform: skew(-45deg);
+    transform: skew(-45deg);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+button#tutorial-title:active,
+button#tutorial-title:focus,
+button#tutorial-title:hover {
+    cursor: pointer;
+    outline: 0;
+}
+@media screen and (max-width: 75em) {
+    .tabs nav ul,
+    .tabs nav ul li a {
+        width: 100%;
+        padding: 0;
+    }
+    .tabs nav ul li {
+        width: 20%;
+        width: calc(16.66% + 1px);
+        margin: 0 0 0 -1px;
+    }
+    .tabs nav ul li:last-child {
+        border-right: none;
+    }
+}
+@media screen and (max-width: 62.5em) {
+    .tabs nav a span {
+        display: none;
+    }
+    .tabs nav a:before {
+        margin-right: 0;
+    }
+    .formucard {
+        float: none;
+        width: auto;
+        padding: 0 0 15px;
+        font-size: 90%;
+    }
+    .formucard h3 {
+        margin: 0.75em 0.75em 0.5em;
+        text-align: left;
+        font-size: 1.15em;
+    }
+    .formucard:after,
+    .formucard:before {
+        content: "";
+        display: table;
+    }
+    .formucard:after {
+        clear: both;
+    }
+    .modal-title {
+        font-weight: 300;
+        font-size: 1.35em;
+        color: #fff;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 55em) {
+    .container > header h1,
+    .container > header > div#tutorial-title,
+    .container > header > span,
+    .item p,
+    .mobile-tagline {
+        text-align: center;
+    }
+    .container > header h1,
+    .container > header nav {
+        float: none;
+    }
+    .container > header nav {
+        margin: 0 auto;
+    }
+    .container > header > span {
+        font-size: 16px;
+    }
+    .container > header > h4 {
+        display: none;
+    }
+    .mobile-tagline {
+        display: block;
+        position: relative;
+        font-weight: 700;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        padding: 0 0 0.75em 0.1em;
+    }
+    .modal-title {
+        font-weight: 300;
+        font-size: 1.2em;
+        color: #fff;
+        line-height: 30px;
+    }
+    .item p {
+        font-size: 1em;
+        margin: 0 15px;
+    }
+}
+@media screen and (max-width: 32em) {
+    .formucard img {
+        float: none;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .formucard h3,
+    .formucard h5 {
+        margin: 1.25em 0 1em;
+    }
+    .formucard p {
+        margin: 0;
+        font-size: 0.95em;
+    }
+    .icon-calculator,
+    .icon-marker {
+        float: right;
+        margin: 0.25em 0.75em;
+    }
+    .modal-title {
+        font-weight: 300;
+        font-size: 1.05em;
+        color: #fff;
+        line-height: 30px;
+    }
+    .item p {
+        font-size: 1em;
+        text-align: center;
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width: 20em) {
+    .container > header nav a {
+        width: 2em;
+        height: 2em;
+    }
+    .mobile-tagline {
+        display: block;
+        position: relative;
+        font-weight: 700;
+        font-size: 0.75em;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        padding: 0 0 0.75em 0.1em;
+        text-align: center;
+    }
+    .formucard p {
+        margin: 0;
+        font-size: 0.75em;
+    }
+    .modal-title {
+        font-weight: 300;
+        font-size: 1em;
+        color: #fff;
+        line-height: 30px;
+    }
+    .item p {
+        font-size: 1em;
+        text-align: center;
+        margin: 0 3px;
+    }
+}
